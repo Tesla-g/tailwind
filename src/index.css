@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-color: #b5f8fe;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body {
+  background-color: var(--body-color);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* The scrolling padiing top will giv padding form when clicked on the section */
+  scroll-padding-top: var(--scroll-padding, 8.5rem);
+}
+html::-webkit-scollbar {
+  /* setting scoll bar width */
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  /* scollbar track */
+  /* border: 1px solid #f08080; */
+  background: #f7f6f9;
+}
+
+html::-webkit-scrollbar-thumb {
+  /* setting the thum color */
+  background: #383347;
+}
